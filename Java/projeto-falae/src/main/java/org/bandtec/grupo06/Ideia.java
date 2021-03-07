@@ -1,21 +1,25 @@
-import java.util.ArrayList;
-import java.util.List;
+package org.bandtec.grupo06;
 
-public class Ideia extends Opiniao{
+public class Ideia extends Opiniao {
     private Integer id;
     private String titulo;
     private String descricao;
     private Usuario autor;
+    private Integer reports = 0;
 
     public Ideia(String titulo, String descricao, Usuario autor) {
-        this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
         this.autor = autor;
     }
 
+
     public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getTitulo() {
@@ -30,6 +34,14 @@ public class Ideia extends Opiniao{
         return autor;
     }
 
+    public Integer getReports() {
+        return reports;
+    }
+
+    public void setReports(Integer reports) {
+        this.reports = reports;
+    }
+
     @Override
     public Integer manterOpiniao(Boolean valorOpiniao) {
         return super.manterOpiniao(valorOpiniao);
@@ -37,7 +49,7 @@ public class Ideia extends Opiniao{
 
     @Override
     public String toString() {
-        return "Ideia{" +
+        return "org.bandtec.grupo06.Ideia{" +
                 "id=" + id +
                 ", titulo='" + titulo + '\'' +
                 ", descricao='" + descricao + '\'' +

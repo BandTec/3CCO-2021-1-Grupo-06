@@ -1,3 +1,5 @@
+package org.bandtec.grupo06;
+
 public abstract class Opiniao {
     private Integer likes;
     private Integer dislike;
@@ -15,8 +17,8 @@ public abstract class Opiniao {
         return dislike;
     }
 
-    public Integer manterOpiniao(Boolean valorOpiniao){
-        if(valorOpiniao){
+    public Integer manterOpiniao(Boolean valorOpiniao) {
+        if (valorOpiniao) {
             System.out.println("Seu like foi contabilizada com sucesso!");
             return likes++;
         } else {

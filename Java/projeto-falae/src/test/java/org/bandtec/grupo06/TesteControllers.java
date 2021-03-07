@@ -1,3 +1,9 @@
+package org.bandtec.grupo06;
+
+import org.bandtec.grupo06.controllers.ComentarioController;
+import org.bandtec.grupo06.controllers.IdeiaController;
+import org.bandtec.grupo06.controllers.UsuarioController;
+
 public class TesteControllers {
     public static void main(String[] args) {
 

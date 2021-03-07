@@ -1,7 +1,9 @@
+package org.bandtec.grupo06;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Comentario extends Opiniao{
+public class Comentario extends Opiniao {
     private Integer id;
     private String texto;
     private Usuario autor;
@@ -37,7 +39,7 @@ public class Comentario extends Opiniao{
 
     @Override
     public String toString() {
-        return "Comentario{" +
+        return "org.bandtec.grupo06.Comentario{" +
                 "id=" + id +
                 ", texto='" + texto + '\'' +
                 ", autor=" + autor +
