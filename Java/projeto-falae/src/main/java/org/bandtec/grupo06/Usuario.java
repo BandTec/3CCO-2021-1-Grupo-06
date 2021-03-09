@@ -8,7 +8,6 @@ public class Usuario {
     private String nome;
     private String senha;
     private String email;
-    private Boolean logado;
     private List<Opiniao> curtidos;
 
     public Usuario(String login, String nome, String senha, String email) {
@@ -16,15 +15,6 @@ public class Usuario {
         this.nome = nome;
         this.senha = senha;
         this.email = email;
-        this.logado = false;
-    }
-
-    public Boolean getLogado() {
-        return logado;
-    }
-
-    public void setLogado(Boolean logado) {
-        this.logado = logado;
     }
 
     public Integer getId() {

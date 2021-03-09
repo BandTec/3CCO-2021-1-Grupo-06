@@ -78,7 +78,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"login\": \"user.teste\",\r\n    \"nome\": \"User Teste\",\r\n    \"senha\": \"teste\",\r\n    \"email\": \"user@teste.com.br\"\r\n}",
+							"raw": "{\r\n    \"login\": \"usuario.teste\",\r\n    \"nome\": \"Usuario Teste\",\r\n    \"senha\": \"teste\",\r\n    \"email\": \"usuario@teste.com.br\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -106,7 +106,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"login\": \"user.teste\",\r\n    \"senha\": \"teste\"\r\n}",
+							"raw": "{\r\n    \"login\": \"usuario.teste\",\r\n    \"senha\": \"teste\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -182,7 +182,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/ideia/1/false",
+							"raw": "http://localhost:8080/ideia/1/true",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -191,7 +191,7 @@
 							"path": [
 								"ideia",
 								"1",
-								"false"
+								"true"
 							]
 						}
 					},
@@ -202,15 +202,6 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"login\": \"user.teste\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "http://localhost:8080/usuario/deslogar",
 							"protocol": "http",
@@ -221,6 +212,51 @@
 							"path": [
 								"usuario",
 								"deslogar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE'S",
+			"item": [
+				{
+					"name": "deleteUsuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteIdeia",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ideia/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ideia",
+								"1"
 							]
 						}
 					},

@@ -4,10 +4,10 @@ public class Ideia extends Opiniao {
     private Integer id;
     private String titulo;
     private String descricao;
-    private Usuario autor;
+    private String autor;
     private Integer reports = 0;
 
-    public Ideia(String titulo, String descricao, Usuario autor) {
+    public Ideia(String titulo, String descricao, String autor) {
         this.titulo = titulo;
         this.descricao = descricao;
         this.autor = autor;
@@ -30,7 +30,7 @@ public class Ideia extends Opiniao {
         return descricao;
     }
 
-    public Usuario getAutor() {
+    public String getAutor() {
         return autor;
     }
 
@@ -40,6 +40,10 @@ public class Ideia extends Opiniao {
 
     public void setReports(Integer reports) {
         this.reports = reports;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
     @Override
